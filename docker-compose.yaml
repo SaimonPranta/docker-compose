@@ -1,0 +1,23 @@
+services:
+  backend:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    image: app-backend-img
+    ports: 
+      - "5000:8000"
+    volumes:
+      - ./backend:/app
+    environment:
+      API_KEY: thisIsAPIKeys
+
+
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: app-frontend-img
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app

@@ -1,0 +1,11 @@
+=> docker image build -t image_name ./
+=> docker container run -p 5000:8000 --name container_name image_name
+=> docker container start container_name
+=> docker image ls -a
+=> docker container ls -a
+=> docker image prune
+=> docker container prune -a
+=> docker container stop container_name
+=> docker exec -it container_id sh
+=> docker logs container_name
+=> docker push image_name
