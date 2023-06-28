@@ -13,3 +13,8 @@ app.get("/test_env", (req, res) =>{
 app.listen(port, () => {
   console.log(`Listening on port localhost:${port}`);
 });
+
+// mongoose.connect("mongodb://host.docker.internal:27017/users")
+// mongoose.connect("mongodb://db_container_IP:27017/users")
+// mongoose.connect("mongodb://db_container_name:27017/users")
+

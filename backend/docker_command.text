@@ -1,5 +1,6 @@
 => docker image build -t image_name ./
 => docker container run -p 5000:8000 --name container_name image_name
+=> docker container run -p 5000:8000 --name container_name --network network_name image_name
 => docker container start container_name
 => docker image ls -a
 => docker container ls -a
@@ -9,3 +10,9 @@
 => docker exec -it container_id sh
 => docker logs container_name
 => docker push image_name
+=> docker rmi -f image_name
+=> docker rm container_name
+=> docker container inspect container_name
+=> docker network create network_name
+=> docker network ls
+
